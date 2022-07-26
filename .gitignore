@@ -10,5 +10,34 @@ npm-debug.*
 *.orig.*
 web-build/
 
-# macOS
-.DS_Store
+# Android Studio
+.project
+.settings
+.classpath
+
+# Watchman
+.watchmanconfig
+
+# Android
+.idea
+.gradle
+local.properties
+*.iml
+/android/
+
+# Node
+node_modules
+*.log
+
+
+# Additional SDKs
+/sdks/download
+/sdks/hermes
+/sdks/hermesc
+
+# Visual studio
+.vscode
+.vs
+
+# Android memory profiler files
+*.hprof
