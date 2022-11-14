@@ -10,9 +10,16 @@ import { Linking, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
     Choose the device you created in previous step and click on play button.
     It will create and setup Andriod Emulator on your system. Now you can view your project by pressing "a" in your
     PC(i.e. system) terminal where you are running your react native project. 
+    You can also use "expo url" printed on your screen to connect to Andriod emulator which seems like - exp://192.168.1.8:19000
+    You can also use your andriod phone as emulator. For that You will just have to install and open "Expo Go" app on 
+    your andriod app and in that app you can either scan the QR code printed on your terminal or use "expo url" to connect.
 
-    To open Debug menu in Andriod emulator :
-    Within your app in the Android Emulator press 'Command + M' on macOS or 'Ctrl + M' on Linux and Windows.
+
+    How to open Debug menu in Andriod emulator :
+    If you are running the android emulator on your PC then open your Android Emulator and press 'Command + M' 
+    on macOS or 'Ctrl + M' on Linux and Windows from the PC keyboard. And if you are running the android emulator 
+    on your android phone then just shake your phone and the Debug menu will be open.
+
 */
 
 // Basic functionality, styling and calling a URL
