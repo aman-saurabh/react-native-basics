@@ -11,14 +11,14 @@ import Component08 from "./components/Component08";
 export default function App() {
   return (
     <>
-      {/* <Component01 /> */}
+      <Component01 />
       {/* <Component02 /> */}
       {/* <Component03 /> */}
       {/* <Component04 /> */}
       {/* <Component05 /> */}
       {/* <Component06 /> */}
       {/* <Component07 /> */}
-      <Component08 />
+      {/* <Component08 /> */}
     </>
   );
 }
