@@ -1,5 +1,5 @@
 import React, { useReducer, useState } from 'react'
-import { RefreshControl, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { RefreshControl, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 //List, ScrollView and RefreshControl
 /*
@@ -40,6 +40,8 @@ const reducer = (state, action) => {
                 }
             }
             return [...state, { key: num, item: `Item ${num}` }];
+        case "reset":
+            return initialState;
         default:
             return state;
     }
@@ -51,7 +53,7 @@ const Component05 = () => {
     const onRefresh = () => {
         setRefreshing(true);
         setTimeout(() => {
-            dispatch({ type: 'add' });
+            dispatch({ type: 'reset' });
             setRefreshing(false);
         }, 2000);
     }
@@ -73,13 +75,15 @@ const Component05 = () => {
                     </View>
                 ))}
             </ScrollView> */}
-            {/* using "refreshControl" prop for refresh (refresh page on scrolling on 
-                the top like new results load in youtube or google mobile apps)*/}
+            {/* <RefreshControl component is used inside a ScrollView or ListView to add "pull to refresh" functionality. 
+            When the ScrollView is at scrollY: 0(i.e. at top), swiping down triggers an 'onRefresh' event. */}
             <ScrollView refreshControl={
                 <RefreshControl
                     refreshing={refreshing}
                     onRefresh={onRefresh}
                     colors={['#2ad568', 'red', 'yellow']}
+                    // Color of refresh indicator changes between the given colors in the array. 
+                    // If you can't see then increase the refresh time in 'onRefresh' method.
                 />
             }>
                 {state.map(i => (
@@ -87,6 +91,11 @@ const Component05 = () => {
                         <Text style={styles.text}>{i.item}</Text>
                     </View>
                 ))}
+                <View style={styles.buttonWrapper}>
+                    <TouchableOpacity style={styles.button} onPress={() => dispatch({ type: 'add' })}>
+                        <Text style={styles.buttonText}>Add Item</Text>
+                    </TouchableOpacity>
+                </View>
             </ScrollView>
         </View>
 
@@ -110,6 +119,22 @@ const styles = StyleSheet.create({
         fontStyle: 'italic',
         color: '#000',
         margin: 20,
+    },
+    buttonWrapper: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 10
+    },
+    button: {
+        backgroundColor: '#fc0341',
+        borderRadius: 10,
+        paddingVertical: 10,
+        paddingHorizontal: 30,
+    },
+    buttonText: {
+        color: '#fff',
+        fontSize: 25,
+        fontWeight: '700'
     }
 })
 

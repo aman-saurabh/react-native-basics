@@ -86,7 +86,7 @@ const Component06 = () => {
                 data={state}
                 keyExtractor={(item, index) => index}   
                 //remove "keyExtractor" prop if there is "key" property in your list
-                renderItem={({ item }) => (
+                renderItem={ ({ item }) => (
                     <View style={styles.item}>
                         <Text style={styles.text}>{item.item}</Text>
                     </View>
