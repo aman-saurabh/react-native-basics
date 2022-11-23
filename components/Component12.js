@@ -35,7 +35,7 @@ const Component12 = () => {
             <Modal
                 visible={showModal}
                 transparent
-                animationType='fade'        //Other option is 'slide'
+                animationType='fade'        //Available options - 'slide', 'fade', 'none'.
                 hardwareAccelerated         //It is used to increase the performance and works on Android only.
                 onRequestClose={() => setShowModal(false)}
             >
