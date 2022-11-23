@@ -22,6 +22,7 @@ const Component08 = () => {
             <Text style={styles.text}>Please enter your name :</Text>
             <TextInput
                 style={styles.input}
+                // multiline={true}         //Use "multiline" attribute to make input field as 'Textarea' of html.
                 placeholder="e.g. Aman"
                 onChangeText={value => setName(value)}
                 keyboardType= 'default'
