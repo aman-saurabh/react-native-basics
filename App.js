@@ -8,6 +8,8 @@ import Component07 from "./components/Component07";
 import Component08 from "./components/Component08";
 import Component09 from "./components/Component09";
 import Component10 from "./components/Component10";
+import Component11 from "./components/Component11";
+import Component12 from "./components/Component12";
 
 /*
     To run this project first you need to install "Andriod studio" in your system and then follow these steps.
@@ -42,7 +44,9 @@ export default function App() {
       {/* <Component07 /> */}
       {/* <Component08 /> */}
       {/* <Component09 /> */}
-      <Component10 />
+      {/* <Component10 /> */}
+      {/* <Component11 /> */}
+      <Component12 />
     </>
   );
 }
