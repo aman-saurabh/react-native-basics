@@ -20,7 +20,8 @@ const ScreenA = ({ navigation }) => {
         Case 3 :- When using "navigation.replace('Screen_B')" in screen_A
         It destroys the stack and navigate to the desired screen in a new stack. So if we use "navigation.replace('Screen_B')" in Screen_A then
         we can't use "navigation.goBack()" on Screen_B as there is no screen in the stack in such cases.
-        ### Also Note that navigation.replace('Screen_B') will work with 'Stack' navigation only and not with 'Bottom Tabs' navigation.
+        
+        ### Note that navigation.replace('Screen_B') will work with 'Stack' navigation only and not with 'Bottom Tabs' navigation.
      */
     return (
         <View style={styles.body}>

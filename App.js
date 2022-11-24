@@ -15,6 +15,8 @@ import Component13 from "./components/Component13";
 import Component14 from "./components/Component14";
 import StackNavigationComponent from './components/react-navigation/01-stack-navigation/StackNavigationComponent';
 import BottomTabsNavigationComponent from './components/react-navigation/02-tab-navigation/BottomTabsNavigationComponent';
+import MaterialBottomTabsNavigationComponent from './components/react-navigation/03-material-tab-navigation/MaterialBottomTabsNavigationComponent';
+import MaterialTopTabsNavigationComponent from './components/react-navigation/03-material-tab-navigation/MaterialTopTabsNavigationComponent';
 
 /*
   Have converted this project from 'Expo CLI' project to 'React Native CLI' project. 
@@ -24,7 +26,9 @@ import BottomTabsNavigationComponent from './components/react-navigation/02-tab-
   npm run android
 
   Above commands may take quite some time, So wait the command completes its execution or throw error.
-  If above commands doesn't work(i.e. if you get error while using above commands) then you can use following commands.
+  If you are running above command for the first time on any emulator then you might get error or program may not run.
+  In that case use following commands. Even if are getting any error again and again especially of type "Invariant Violation: requireNativeComponent....."
+  then simply close your emulator, wipe its data and restart enulator and then run following commands. Your error might be resolved.
 
   npx react-native start 				      - - - (To start Metro)
   npx react-native run-android			  - - - (Run this command in a new terminal(i.e. don't close the terminal in which metro is running) to run project in Android emulator)
@@ -69,7 +73,9 @@ export default function App() {
       {/* <Component13 /> */}
       {/* <Component14 /> */}
       {/* <StackNavigationComponent /> */}
-      <BottomTabsNavigationComponent />
+      {/* <BottomTabsNavigationComponent /> */}
+      {/* <MaterialBottomTabsNavigationComponent /> */}
+      <MaterialTopTabsNavigationComponent />
     </>
   );
 }
