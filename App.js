@@ -14,7 +14,21 @@ import Component12 from "./components/Component12";
 import Component13 from "./components/Component13";
 import Component14 from "./components/Component14";
 import StackNavigationComponent from './components/react-navigation/01-stack-navigation/StackNavigationComponent';
-import TabBottomNavigationComponent from './components/react-navigation/02-tab-navigation/TabBottomNavigationComponent';
+import BottomTabsNavigationComponent from './components/react-navigation/02-tab-navigation/BottomTabsNavigationComponent';
+
+/*
+  Have converted this project from 'Expo CLI' project to 'React Native CLI' project. 
+  So now you need to run this project as follows :
+  npm start
+  Or,
+  npm run android
+
+  Above commands may take quite some time, So wait the command completes its execution or throw error.
+  If above commands doesn't work(i.e. if you get error while using above commands) then you can use following commands.
+
+  npx react-native start 				      - - - (To start Metro)
+  npx react-native run-android			  - - - (Run this command in a new terminal(i.e. don't close the terminal in which metro is running) to run project in Android emulator)
+*/
 
 /*
     To run this project first you need to install "Andriod studio" in your system and then follow these steps.
@@ -55,7 +69,7 @@ export default function App() {
       {/* <Component13 /> */}
       {/* <Component14 /> */}
       {/* <StackNavigationComponent /> */}
-      <TabBottomNavigationComponent />
+      <BottomTabsNavigationComponent />
     </>
   );
 }
