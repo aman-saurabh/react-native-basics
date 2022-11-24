@@ -59,4 +59,3 @@ const styles = StyleSheet.create({
 })
 
 export default Component08
-//Completed till 1:36

@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import Component01 from "./components/Component01";
 import Component02 from "./components/Component02";
 import Component03 from "./components/Component03";
@@ -12,6 +13,8 @@ import Component11 from "./components/Component11";
 import Component12 from "./components/Component12";
 import Component13 from "./components/Component13";
 import Component14 from "./components/Component14";
+import StackNavigationComponent from './components/react-navigation/01-stack-navigation/StackNavigationComponent';
+import TabBottomNavigationComponent from './components/react-navigation/02-tab-navigation/TabBottomNavigationComponent';
 
 /*
     To run this project first you need to install "Andriod studio" in your system and then follow these steps.
@@ -50,7 +53,9 @@ export default function App() {
       {/* <Component11 /> */}
       {/* <Component12 /> */}
       {/* <Component13 /> */}
-      <Component14 />
+      {/* <Component14 /> */}
+      {/* <StackNavigationComponent /> */}
+      <TabBottomNavigationComponent />
     </>
   );
 }

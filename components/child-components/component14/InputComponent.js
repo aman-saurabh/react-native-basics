@@ -1,7 +1,13 @@
 import React from 'react'
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native'
 
-//Here we have used object destructuring, so you don't find 'props' keyword in this file.
+// Used in "Component14.js" file
+
+/*
+Here we have used object destructuring, so you don't find 'props' keyword in this file.
+So here you can use 'props' also inplace of { name, setName, showName, setShowName } 
+and then use 'name', 'setShowName' etc. as 'props.name', 'props.setShowName' etc. 
+*/
 const InputComponent = ({ name, setName, showName, setShowName }) => {
     return (
         <View style={styles.container}>
