@@ -7,6 +7,11 @@ const ScreenA = ({ navigation }) => {
         navigation.navigate('Screen_B')
         // navigation.goBack()
         // navigation.replace('Screen_B')
+        
+        //Followings are applicable for Drawers only
+        //navigation.openDrawer()           //Opens the drawer pane.
+        //navigation.closeDrawer()          //Closes the drawer pane.
+        //navigation.toggleDrawer()         //Opens the drawer pane if closed, closes the drawer pane if opened.
     }
     /*
         Case 1 :- When using "navigation.navigate('Screen_B')" in screen_A

@@ -13,10 +13,11 @@ import Component11 from "./components/Component11";
 import Component12 from "./components/Component12";
 import Component13 from "./components/Component13";
 import Component14 from "./components/Component14";
-import StackNavigationComponent from './components/react-navigation/01-stack-navigation/StackNavigationComponent';
-import BottomTabsNavigationComponent from './components/react-navigation/02-tab-navigation/BottomTabsNavigationComponent';
-import MaterialBottomTabsNavigationComponent from './components/react-navigation/03-material-tab-navigation/MaterialBottomTabsNavigationComponent';
-import MaterialTopTabsNavigationComponent from './components/react-navigation/03-material-tab-navigation/MaterialTopTabsNavigationComponent';
+import StackNavigationComponent from './components/react-navigation/01-stack-navigator/StackNavigationComponent';
+import BottomTabsNavigationComponent from './components/react-navigation/02-tab-navigator/BottomTabsNavigationComponent';
+import MaterialBottomTabsNavigationComponent from './components/react-navigation/03-material-tab-navigator/MaterialBottomTabsNavigationComponent';
+import MaterialTopTabsNavigationComponent from './components/react-navigation/03-material-tab-navigator/MaterialTopTabsNavigationComponent';
+import DrawerNavigationComponent from './components/react-navigation/04-drawer-navigator/DrawerNavigationComponent';
 
 /*
   Have converted this project from 'Expo CLI' project to 'React Native CLI' project. 
@@ -75,7 +76,8 @@ export default function App() {
       {/* <StackNavigationComponent /> */}
       {/* <BottomTabsNavigationComponent /> */}
       {/* <MaterialBottomTabsNavigationComponent /> */}
-      <MaterialTopTabsNavigationComponent />
+      {/* <MaterialTopTabsNavigationComponent /> */}
+      <DrawerNavigationComponent />
     </>
   );
 }

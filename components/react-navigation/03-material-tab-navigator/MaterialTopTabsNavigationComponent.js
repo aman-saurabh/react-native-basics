@@ -2,7 +2,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import React from 'react'
 import ScreenA from '../ScreenA'
 import ScreenB from '../ScreenB'
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 
 const Tab = createMaterialTopTabNavigator();
@@ -33,7 +33,7 @@ const MaterialTopTabsNavigationComponent = () => {
                     tabBarShowLabel: true,      //It is default to true
                     tabBarActiveTintColor: '#fcba03',
                     tabBarInactiveTintColor: '#f52f02',
-                    tabBarPressColor: '#fff',
+                    tabBarPressColor: 'transparent',
                     // tabBarPressOpacity: 0,       // It is not making any effect even if we change tabBarPressColor to any other color.Don't know why.
                     // tabBarScrollEnabled: true    // To make the tab bar scrollable.
                     tabBarIconStyle: { backgroundColor: 'pink', width: 40, flex: 1, alignItems: 'center', justifyContent: 'center', borderRadius: 10 },
