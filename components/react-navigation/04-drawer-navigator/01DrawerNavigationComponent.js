@@ -12,10 +12,11 @@ const DrawerNavigationComponent = () => {
         <NavigationContainer>
             <Drawer.Navigator
                 initialRouteName="Screen_B"
-                defaultStatus="open"
+                // defaultStatus="close"
+                backBehavior="history"
                 //The default status of the drawer - whether the drawer should stay open or closed by default.
                 screenOptions={({ route }) => ({
-                    headerShown: true,               //Whether to show or hide the header for the screen. Defaults to true
+                    headerShown: true,                //Whether to show or hide the header for the screen. Defaults to true
                     //drawerPosition: 'right',        //Options are left or right. Defaults to left
                     //drawerType: 'slide',            //Options are "back", "front", "slide" and "permanent"
                     drawerHideStatusBarOnOpen: true,
