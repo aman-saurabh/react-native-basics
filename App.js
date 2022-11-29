@@ -19,6 +19,7 @@ import MaterialBottomTabsNavigationComponent from './components/react-navigation
 import MaterialTopTabsNavigationComponent from './components/react-navigation/03-material-tab-navigator/MaterialTopTabsNavigationComponent';
 import CustomDrawerComponent from './components/react-navigation/04-drawer-navigator/02CustomDrawerComponent';
 import DrawerNavigationComponent from './components/react-navigation/04-drawer-navigator/01DrawerNavigationComponent';
+import PassingParametersBetweenScreens from './components/react-navigation/05-passing-parameters-between-screems/PassingParametersBetweenScreens';
 
 /*
   Have converted this project from 'Expo CLI' project to 'React Native CLI' project. 
@@ -79,7 +80,8 @@ export default function App() {
       {/* <MaterialBottomTabsNavigationComponent /> */}
       {/* <MaterialTopTabsNavigationComponent /> */}
       {/* <DrawerNavigationComponent /> */}
-      <CustomDrawerComponent />
+      {/* <CustomDrawerComponent /> */}
+      <PassingParametersBetweenScreens />
     </>
   );
 }
